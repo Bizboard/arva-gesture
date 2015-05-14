@@ -1,0 +1,26 @@
+{
+  "name": "arva-gesture",
+  "version": "1.0.0-pre-1",
+  "description": "MYO Component library using Manuel Overdijk's MYO Bluetooth Library which can be used within projects like NW.js",
+  "main": "dist/arva-gesture",
+  "homepage": "https://github.com/Bizboard/arva-gesture",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Bizboard/arva-gesture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bizboard/arva-gesture/issues"
+  },
+  "scripts": {
+    "build": "jspm bundle-sfx main dist/arva-gesture.js"
+  },
+  "jspm": {
+    "directories": {
+      "lib": "src",
+      "packages": "jspm_packages"
+    }
+  },
+  "dependencies": {
+    "MyoNodeBluetooth": "git://github.com/manueloverdijk/myonodebluetooth.git"
+  }
+}
