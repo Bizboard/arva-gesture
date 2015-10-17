@@ -32,6 +32,22 @@ if (require) {
                 console.log('received pose:', data.type);
                 eventHandler.emit(data.type);
             }.bind(this));
+
+            armband.on('eulerangle', function(data){
+                eventHandler.emit(data);
+            }.bind(this));
+
+            armband.on('orientation', function(data){
+                eventHandler.emit(data);
+            }.bind(this));
+
+            armband.on('accelerometer', function(data){
+                eventHandler.emit(data);
+            }.bind(this));
+
+            armband.on('gyroscope', function(data){
+                eventHandler.emit(data);
+            }.bind(this));
         });
 
         armband.connect();
